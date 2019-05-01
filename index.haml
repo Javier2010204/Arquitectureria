@@ -1,0 +1,64 @@
+!!!5
+%html{class:"no-js",lang:"es"}
+	%head
+		%meta{charset:"utf-8"}
+		%title Expertos en arquitectura y construccion
+		%meta{name:"description", content:"por si alguien nos busca"}
+		%link{rel:"stylesheet", href:"css/normalize.css"}
+		%link{rel:"stylesheet", href:"css/bootstrap.css"}
+		%link{rel:"stylesheet", href:"css/flexboxgrid.css"}
+		%link{rel:"stylesheet", href:"css/style.css"}
+		%meta{name:"viewport", content:"width=device-width,initial-scale=1"}
+		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
+	%body
+		="<!--[if lt IE 9]>"
+		%p{class:"browserupgrade"}
+			Estas usando un navegador
+			%strong desactualizado
+			por favor
+			%a{href:"http://browsehappy.com/"}
+				actualiza tu navegador
+			para una mejor experiencia
+		="<![endif]-->"
+		.image-container
+			%img{src:"/imgs/arquiuno.jpg"}
+		.row.full-height.middle-xs.center-xs.relative.up
+			.col-xs-12
+				.box.white-text
+					%img{src:"/imgs/logo.png", width:500}
+					%h1.white-text.title.no-margin 
+					%p 
+			%nav.fixed.top.right.white-text.navigation#navigation
+				-menu=["Inicio","Nosotros","Proyectos","Contacto"]
+				%ul.list-inline
+					-menu.each do |item|
+						%li.list-inline-item
+							%a(href="#")=item
+			.absolute.black.large-padding.white-text.bottom.full-width#description
+				.row.middle-xs.center-xs
+					.col-xs-7.col-sm-6.white-text.medium
+						Ideas creadas por artistas 
+					.col-xs.hidden
+						.box
+							%nav.text-right.navigation
+								%ul.list-inline
+									-menu.each do |item|
+										%li.list-inline-item
+											%a(href="#")=item
+											%p prueba
+		.text-center.relative#menu
+			.absolute.white#menu-title
+				%h2.title.pacifico lo hacemos?
+			-menu_photos = [{title:"Disenio",image:"disenio.jpg",description:""}, {title:"Constuccion",image:"construccion.jpeg",description:""},{title:"Remodelacion",image:"remodelacion.jpeg",description:""},{title:"Tablayeso",image:"tablayeso.jpeg",description:""},{title:"Pintura",image:"pintura.jpeg",description:""},{title:"Electricidad",image:"electricidad.jpeg",description:""},{title:"Instalacion de pisos",image:"pisos.jpeg",description:""},{title:"Acabados especiales",image:"especiales.jpeg",description:""}]
+			.row
+				-menu_photos.each do |photo|
+					.col-md-4.col-lg-3.col-sm-6.col-xs-12.service{style:"background-image:url(/imgs/#{photo[:image]})"}
+						.screen
+							.row.middle-xs.full-height
+								.col-xs-12
+									%h3.white-text.subtitle= photo[:title]
+
+
+		%script{src:"https://code.jquery.com/jquery-3.3.1.min.js",integrity:"sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=",crossorigin:"anonymous"}
+		%script
+			window.jQuery || document.write("<script src="/js/vendor/jquery-3.3.1.min.js"></script>")
