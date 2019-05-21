@@ -167,7 +167,12 @@ textarea {
   width: 100%;
   overflow-x: hidden; }
   #gallery .inner {
-    white-space: nowrap; }
+    white-space: nowrap;
+    position: relative;
+    left: 0%;
+    -webkit-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s; }
   #gallery .image {
     display: inline-block;
     margin-right: -4px;
