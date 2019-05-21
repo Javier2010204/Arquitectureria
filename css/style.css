@@ -181,14 +181,28 @@ textarea {
     background-size: cover;
     background-position: center; }
 
+.container .card {
+  padding: 2em;
+  margin: -100px; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
     Cambiar la forma en la que se muestran los colores
   */
+.card {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
 .white-text {
   color: #fff; }
+
+.black-text {
+  color: #000; }
+
+.white {
+  background-color: #fff; }
 
 .black {
   background-color: #000; }
@@ -198,6 +212,9 @@ textarea {
 
 .medium, .navigation li {
   font-size: 1.5em; }
+
+.slim {
+  font-weight: 200; }
 
 .full-height {
   height: 100%; }
@@ -234,6 +251,9 @@ textarea {
 
 .large-padding {
   padding: 10px 15px; }
+
+.top-space {
+  margin-top: 2em; }
 
 /*
  * Hide visually and from screen readers
