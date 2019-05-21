@@ -78,10 +78,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-.owner{
-  padding: 10px;
-}
 .image-container {
   height: 100%;
   width: 100%;
@@ -167,6 +163,19 @@ textarea {
 .pacifico {
   font-family: "Pacifico"; }
 
+#gallery {
+  width: 100%;
+  overflow-x: hidden; }
+  #gallery .inner {
+    white-space: nowrap; }
+  #gallery .image {
+    display: inline-block;
+    margin-right: -4px;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -202,7 +211,6 @@ textarea {
 
 .top {
   top: 3em; }
-
 
 .bottom {
   bottom: 0px; }

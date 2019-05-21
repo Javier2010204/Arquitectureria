@@ -1,3 +1,4 @@
+-gallery_photos = [{image:"proyecto1.jpg"}, {image:"proyecto2.jpg"},{image:"proyecto3.jpeg"}]
 !!!5
 %html{class:"no-js",lang:"es"}
 	%head
@@ -57,8 +58,13 @@
 							.row.middle-xs.full-height
 								.col-xs-12
 									%h3.white-text.subtitle= photo[:title]
-
-
-		%script{src:"https://code.jquery.com/jquery-3.3.1.min.js",integrity:"sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=",crossorigin:"anonymous"}
+		#gallery
+			.inner
+				-gallery_photos.each do |photo|
+					.image{style:"background-image:url(/imgs/#{photo[:image]});"}
+		%script{src:"https://code.jquery.com/jquery-3.4.1.min.js",
+  				integrity:"sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=",
+  				crossorigin:"anonymous"}
 		%script
-			window.jQuery || document.write("<script src="/js/vendor/jquery-3.3.1.min.js"></script>")
+			window.jQuery || document.write("<script src='/js/vendor/jquery-3.3.1.min.js'><\/script>")
+		%script{src:"./js/main.js"}
