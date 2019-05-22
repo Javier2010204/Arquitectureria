@@ -9,6 +9,7 @@
 		%link{rel:"stylesheet", href:"css/bootstrap.css"}
 		%link{rel:"stylesheet", href:"css/flexboxgrid.css"}
 		%link{rel:"stylesheet", href:"css/style.css"}
+		%link{href:"https://fonts.googleapis.com/css?family=Dancing+Script&display=swap",rel:"stylesheet"}
 		%meta{name:"viewport", content:"width=device-width,initial-scale=1"}
 		%meta{:"data-name" => "image-counter", content:"#{gallery_photos.size-1}"}
 		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
@@ -22,8 +23,7 @@
 				actualiza tu navegador
 			para una mejor experiencia
 		="<![endif]-->"
-		.image-container
-			%img{src:"/imgs/arquiuno.jpg"}
+		.image-container{style:"background-image:url('/imgs/portada.jpg')"}
 		.row.full-height.middle-xs.center-xs.relative.up
 			.col-xs-12
 				.box.white-text
