@@ -86,6 +86,8 @@ textarea {
   .image-container img {
     background-color: #646464;
     background-blend-mode: soft-light;
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
     min-width: 100%;
     min-height: 100%;
     width: 100%;
