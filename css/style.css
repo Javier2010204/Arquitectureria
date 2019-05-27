@@ -99,6 +99,37 @@ textarea {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
+.IT-Company--Web-1-hex {
+  color: #0528F2; }
+
+.IT-Company--Web-2-hex {
+  color: #056CF2; }
+
+.IT-Company--Web-3-hex {
+  color: #0583F2; }
+
+.IT-Company--Web-4-hex {
+  color: #04BF8A; }
+
+.IT-Company--Web-5-hex {
+  color: #F2F2F2; }
+
+/* Color Theme Swatches in Hex */
+.Nurse-Mobile---Personal-Medical-Assistant-1-hex {
+  color: #38ABF2; }
+
+.Nurse-Mobile---Personal-Medical-Assistant-2-hex {
+  color: #43D9CA; }
+
+.Nurse-Mobile---Personal-Medical-Assistant-3-hex {
+  color: #E7F294; }
+
+.Nurse-Mobile---Personal-Medical-Assistant-4-hex {
+  color: #BF1111; }
+
+.Nurse-Mobile---Personal-Medical-Assistant-5-hex {
+  color: #F2F2F2; }
+
 .video-container {
   height: 100%;
   width: 100%;
