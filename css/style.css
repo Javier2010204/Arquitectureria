@@ -9,7 +9,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 html, body {
-  height: 100%; }
+  height: 100%;
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -22,11 +23,13 @@ html, body {
  */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 /*
  * A better looking default horizontal rule
@@ -37,7 +40,8 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -50,7 +54,8 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /*
  * Remove default fieldset styles.
@@ -58,13 +63,15 @@ video {
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical; }
+  resize: vertical;
+}
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -73,7 +80,8 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0; }
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -82,141 +90,171 @@ textarea {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  position: absolute; }
-  .image-container img {
-    background-color: #646464;
-    background-blend-mode: soft-light;
-    -webkit-filter: opacity(0.5);
-    filter: opacity(0.5);
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+  position: absolute;
+}
+
+.image-container img {
+  background-color: #646464;
+  background-blend-mode: soft-light;
+  filter: opacity(0.5);
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 .IT-Company--Web-1-hex {
-  color: #0528F2; }
+  color: #0528F2;
+}
 
 .IT-Company--Web-2-hex {
-  color: #056CF2; }
+  color: #056CF2;
+}
 
 .IT-Company--Web-3-hex {
-  color: #0583F2; }
+  color: #0583F2;
+}
 
 .IT-Company--Web-4-hex {
-  color: #04BF8A; }
+  color: #04BF8A;
+}
 
 .IT-Company--Web-5-hex {
-  color: #F2F2F2; }
+  color: #F2F2F2;
+}
 
 /* Color Theme Swatches in Hex */
 .Nurse-Mobile---Personal-Medical-Assistant-1-hex {
-  color: #38ABF2; }
+  color: #38ABF2;
+}
 
 .Nurse-Mobile---Personal-Medical-Assistant-2-hex {
-  color: #43D9CA; }
+  color: #43D9CA;
+}
 
 .Nurse-Mobile---Personal-Medical-Assistant-3-hex {
-  color: #E7F294; }
+  color: #E7F294;
+}
 
 .Nurse-Mobile---Personal-Medical-Assistant-4-hex {
-  color: #BF1111; }
+  color: #BF1111;
+}
 
 .Nurse-Mobile---Personal-Medical-Assistant-5-hex {
-  color: #F2F2F2; }
+  color: #F2F2F2;
+}
 
 .video-container {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  position: absolute; }
-  .video-container video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+  position: absolute;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 .navigation li {
   padding: 5px 10px;
-  -webkit-transition: all 0.9s;
-  -o-transition: all 0.9s;
-  transition: all 0.9s; }
-  .navigation li:hover {
-    background-color: rgba(99, 97, 97, 0.8); }
-  .navigation li a {
-    color: white; }
-    .navigation li a:hover {
-      text-decoration: none;
-      cursor: pointer; }
+  transition: all 0.9s;
+}
+
+.navigation li:hover {
+  background-color: rgba(99, 97, 97, 0.8);
+}
+
+.navigation li a {
+  color: white;
+}
+
+.navigation li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .service {
   height: 300px;
   background-size: cover;
   background-position: center;
   padding: 0px;
-  overflow: hidden; }
-  .service:hover .screen {
-    top: 0%; }
-  .service .screen {
-    top: -100%;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 100%;
-    width: 100%;
-    -webkit-transition: top 0.5s;
-    -o-transition: top 0.5s;
-    transition: top 0.5s; }
+  overflow: hidden;
+}
+
+.service:hover .screen {
+  top: 0%;
+}
+
+.service .screen {
+  top: -100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  transition: top 0.5s;
+}
 
 #menu-title {
   width: 300px;
   z-index: 5;
   left: calc(50% - 150px);
-  top: calc(50% - 1.5em); }
+  top: calc(50% - 1.5em);
+}
 
 .white {
-  background-color: white; }
+  background-color: white;
+}
 
 .subtitle {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+}
 
 .title {
-  font-size: 3.5em; }
+  font-size: 3.5em;
+}
 
 .pacifico {
-  font-family: "Pacifico"; }
+  font-family: "Pacifico";
+}
 
 #gallery {
   width: 100%;
-  overflow-x: hidden; }
-  #gallery .inner {
-    white-space: nowrap;
-    position: relative;
-    left: 0%;
-    -webkit-transition: left 1s;
-    -o-transition: left 1s;
-    transition: left 1s; }
-  #gallery .image {
-    display: inline-block;
-    margin-right: -4px;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center; }
+  overflow-x: hidden;
+}
+
+#gallery .inner {
+  white-space: nowrap;
+  position: relative;
+  left: 0%;
+  transition: left 1s;
+}
+
+#gallery .image {
+  display: inline-block;
+  margin-right: -4px;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
 
 .container .card {
   padding: 2em;
-  margin: -100px; }
+  margin: -100px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -225,77 +263,99 @@ textarea {
     Cambiar la forma en la que se muestran los colores
   */
 .card {
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 
 .white-text {
-  color: #fff; }
+  color: #fff;
+}
 
 .black-text {
-  color: #000; }
+  color: #000;
+}
 
 .white {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .black {
-  background-color: #000; }
+  background-color: #000;
+}
 
 .title {
-  font-size: 3.5em; }
+  font-size: 3.5em;
+}
 
 .medium, .navigation li {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 .slim {
-  font-weight: 200; }
+  font-weight: 200;
+}
 
 .full-height {
-  height: 100%; }
+  height: 100%;
+}
 
 .full-width {
-  width: 100%; }
+  width: 100%;
+}
 
 .relative {
-  position: relative; }
+  position: relative;
+}
 
 .fixed {
-  position: fixed; }
+  position: fixed;
+}
 
 .absolute {
-  position: absolute; }
+  position: absolute;
+}
 
 .top {
-  top: 3em; }
+  top: 3em;
+}
 
 .bottom {
-  bottom: 0px; }
+  bottom: 0px;
+}
 
 .right {
-  right: 5em; }
+  right: 5em;
+}
 
 .up {
-  z-index: 50; }
+  z-index: 50;
+}
 
 .margin-top {
-  margin-top: 3em; }
+  margin-top: 3em;
+}
 
 .no-margin {
-  margin: 0; }
+  margin: 0;
+}
 
 .large-padding {
-  padding: 10px 15px; }
+  padding: 10px 15px;
+}
 
 .top-space {
-  margin-top: 2em; }
+  margin-top: 2em;
+}
 
 .dancing-script {
-  font-family: 'Dancing Script', cursive; }
+  font-family: 'Dancing Script', cursive;
+}
 
 /*
  * Hide visually and from screen readers
  */
 .hidden {
-  display: none !important; }
+  display: none !important;
+}
 
 /*
 * Hide only visually, but have it available for screen readers:
@@ -315,7 +375,8 @@ textarea {
   position: absolute;
   width: 1px;
   white-space: nowrap;
-  /* 1 */ }
+  /* 1 */
+}
 
 /*
 * Extends the .visuallyhidden class to allow the element
@@ -330,13 +391,15 @@ textarea {
   overflow: visible;
   position: static;
   width: auto;
-  white-space: inherit; }
+  white-space: inherit;
+}
 
 /*
 * Hide visually and from screen readers, but maintain layout
 */
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*
 * Clearfix: contain floats
@@ -354,22 +417,18 @@ textarea {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */ }
+  /* 2 */
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -384,41 +443,53 @@ textarea {
     /* Black prints faster */
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
   a,
   a:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: " (" attr(href) ")";
+  }
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    content: " (" attr(title) ")";
+  }
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
-    content: ""; }
+    content: "";
+  }
   pre {
-    white-space: pre-wrap !important; }
+    white-space: pre-wrap !important;
+  }
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
   /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
   thead {
-    display: table-header-group; }
+    display: table-header-group;
+  }
   tr,
   img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
   h2,
   h3 {
-    page-break-after: avoid; } }
+    page-break-after: avoid;
+  }
+}
