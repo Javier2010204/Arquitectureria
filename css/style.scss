@@ -464,6 +464,9 @@ textarea {
           max-height: 0px;
           overflow: hidden;
           transition: all 0.4s;
+          &.active{
+            max-height: 80vh;
+          }
           li{
             display: block;
             margin-top: 1em;

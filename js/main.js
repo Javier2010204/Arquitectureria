@@ -13,3 +13,7 @@ setInterval(()=>{
 		left: "-"+currentPosition*100+"%"
 	})
 }, 3000)
+
+$("#menu-opener").on("click", function(){
+	$("#responsive-nav ul").toggleClass("active")
+})

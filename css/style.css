@@ -453,6 +453,9 @@ textarea {
     overflow: hidden;
     transition: all 0.4s;
   }
+  #responsive-nav ul.active {
+    max-height: 80vh;
+  }
   #responsive-nav ul li {
     display: block;
     margin-top: 1em;
