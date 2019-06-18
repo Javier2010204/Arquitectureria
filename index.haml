@@ -7,6 +7,7 @@
 		%meta{name:"description", content:"por si alguien nos busca"}
 		%link{rel:"stylesheet", href:"css/normalize.css"}
 		%link{rel:"stylesheet", href:"css/bootstrap.css"}
+		%link{rel:"stylesheet", href:"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"}
 		%link{rel:"stylesheet", href:"css/flexboxgrid.css"}
 		%link{rel:"stylesheet", href:"css/style.css"}
 		%link{href:"https://fonts.googleapis.com/css?family=Dancing+Script&display=swap",rel:"stylesheet"}
@@ -43,7 +44,8 @@
 						Ideas creadas por artistas de la construcción
 					.col-xs
 						.box
-							%nav.text-right.navigation
+							%nav.text-right.navigation#responsive-nav
+								%i.glyphicon.glyphicon-menu-hamburger.white-text.subtitle#menu-opener
 								%ul.list-inline
 									-menu.each do |item|
 										%li.list-inline-item
@@ -59,7 +61,7 @@
 							.row.middle-xs.full-height
 								.col-xs-12
 									%h3.white-text.medium= photo[:title]
-									%p.white-text.small= photo[:description]
+									%p.white-text.small.especial-padding= photo[:description]
 		#gallery
 			.inner
 				-gallery_photos.each do |photo|
