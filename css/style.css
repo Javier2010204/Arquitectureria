@@ -15,6 +15,9 @@ html, body {
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
+ landing Doctors
+ presupuesto Palencia y Andres
+ paginas
  *
  * Vendor-prefixed and regular ::selection selectors cannot be combined:
  * https://stackoverflow.com/a/16982510/7133471
@@ -345,10 +348,6 @@ textarea {
 
 .top-space {
   margin-top: 2em;
-}
-
-.dancing-script {
-  font-family: 'Dancing Script', cursive;
 }
 
 /*
