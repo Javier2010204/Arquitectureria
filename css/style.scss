@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -295,9 +295,13 @@ textarea {
   .black{
       background-color: #000;
   }
+
+  .blue{
+      background-color: #063040;
+  }
   // fin de los colores
-  
-  
+
+
    .title{
     font-size: 3.5em;
   }
@@ -356,6 +360,11 @@ textarea {
   .large-padding{
       padding: 10px 15px;
   }
+
+  .big-padding{
+      padding: 10px 5px;
+  }
+
   .top-space{
     margin-top: 2em;
   }
@@ -436,7 +445,7 @@ textarea {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -483,7 +492,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

@@ -294,6 +294,10 @@ textarea {
   background-color: #000;
 }
 
+.blue {
+  background-color: #063040;
+}
+
 .title {
   font-size: 3.5em;
 }
@@ -352,6 +356,10 @@ textarea {
 
 .large-padding {
   padding: 10px 15px;
+}
+
+.big-padding {
+  padding: 10px 5px;
 }
 
 .top-space {
