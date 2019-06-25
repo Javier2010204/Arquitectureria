@@ -386,7 +386,7 @@ textarea {
  * Hide visually and from screen readers
  */
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 /*
