@@ -28,9 +28,11 @@ $(window).scroll(()=>{
 	if(inBottom && !sticky){
 		sticky = true
 		stickNavigation()
-	}else if(sticky){
+		console.log("mostrar");
+	}else if(!inBottom && sticky){
 		sticky = false
 		unStickNavigation()
+		console.log("ocultaar");
 	}
 })
 
@@ -47,8 +49,8 @@ function unStickNavigation(){
 }
 
 function isInBottom(){
-	const $description = $('#description')
+	const $description = $("#description")
 	const descriptionHeight = $description.height()
 
-	return $(window).scrollTop() > $(window).height() - (descriptionHeight * 1.5)
+	return $(window).scrollTop() > $(window).height() - (descriptionHeight * 2)
 }
