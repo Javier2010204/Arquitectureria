@@ -39,7 +39,9 @@ function stickNavigation(){
 }
 
 function unStickNavigation(){
-
+	$("#description").removeClass("fixed").addClass("absolute")
+	$("#navigation").removeClass("hidden")
+	$("#sticky-navigation").addClass("hidden")
 }
 
 function isInBottom(){

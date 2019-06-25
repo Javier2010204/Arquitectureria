@@ -263,6 +263,18 @@ textarea {
   padding: 10px;
 }
 
+#description ul {
+  margin: 0px;
+}
+
+#description.absolute {
+  bottom: 0px;
+}
+
+#description.fixed {
+  top: 0px;
+}
+
 .container .card {
   padding: 2em;
   margin: -100px;

@@ -252,7 +252,17 @@ textarea {
     padding: 10px;
   }
 
-
+#description{
+    ul{
+        margin: 0px;
+    }
+    &.absolute{
+        bottom: 0px;
+    }
+    &.fixed{
+        top: 0px;
+    }
+}
 
 
 
