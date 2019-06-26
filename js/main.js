@@ -54,3 +54,5 @@ function isInBottom(){
 
 	return $(window).scrollTop() > $(window).height() - (descriptionHeight * 2)
 }
+
+// Agregar efectos de responsive design
