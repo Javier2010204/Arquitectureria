@@ -461,7 +461,7 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 500px) {
   #menu-opener {
     display: block;
   }
